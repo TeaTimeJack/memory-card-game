@@ -1,0 +1,46 @@
+.title{
+    margin-top: 5px;
+    margin-left: 180px;
+    margin-bottom: 2px;
+
+}
+.gridDiv{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    height: 800px;
+    width: 400px;
+}
+
+.backCard{
+    margin: 3px;
+}
+.backCard:hover{
+    margin: 0;
+    border: 3px red solid;
+    cursor: pointer;
+}
+
+.newGameButton{
+    margin-left: 140px;
+    cursor: pointer;
+    width: 260px;
+    font-size:x-large;
+
+}
+.endGameDiv{
+    margin-top: 5px;
+    margin-left: 70px;
+    margin-bottom: 2px;
+}
+.endGameTitle{
+    margin-left: 140px;
+}
+.lostStatment{
+padding-left: 70px;
+}
+
+.errorDiv{
+    display: inline;
+    font-size: larger;
+}
