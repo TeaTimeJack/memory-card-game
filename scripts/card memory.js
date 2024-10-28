@@ -17,8 +17,8 @@ function turnTheCard(indexChoosen){
   
     let position = possiblePositions[indexChoosen];
         if(firstGuess !== undefined && secondGuess !== undefined && cards[firstGuess].foundPair === false && cards[secondGuess].foundPair === false && errorsCount>0){
-            document.getElementById(`js-card-${cards[firstGuess].position}`).src ="/imges/back of card.jpg";
-            document.getElementById(`js-card-${cards[secondGuess].position}`).src ="/imges/back of card.jpg";
+            document.getElementById(`js-card-${cards[firstGuess].position}`).src ="../imges/back of card.jpg";
+            document.getElementById(`js-card-${cards[secondGuess].position}`).src ="../imges/back of card.jpg";
                 if (cards[firstGuess].id !== cards[secondGuess].id){
                 errorsCount --;
                 htmlErrorsDiv = "Errors: " + (errorsCount);
@@ -75,21 +75,21 @@ function turnTheCard(indexChoosen){
 function newGame(){
 
     let htmlCardsTable = `<img id="js-card-a1" class="backCard" onclick="turnTheCard(0)" src="/imges/back of card.jpg">
-        <img id="js-card-a2" class="backCard" onclick="turnTheCard(1)" src="/imges/back of card.jpg">
-        <img id="js-card-a3" class="backCard" onclick="turnTheCard(2)" src="/imges/back of card.jpg">
-        <img id="js-card-a4" class="backCard" onclick="turnTheCard(3)" src="/imges/back of card.jpg">
-        <img id="js-card-b1" class="backCard" onclick="turnTheCard(4)" src="/imges/back of card.jpg">
-        <img id="js-card-b2" class="backCard" onclick="turnTheCard(5)" src="/imges/back of card.jpg">
-        <img id="js-card-b3" class="backCard" onclick="turnTheCard(6)" src="/imges/back of card.jpg">
-        <img id="js-card-b4" class="backCard" onclick="turnTheCard(7)" src="/imges/back of card.jpg">
-        <img id="js-card-c1" class="backCard" onclick="turnTheCard(8)" src="/imges/back of card.jpg">
-        <img id="js-card-c2" class="backCard" onclick="turnTheCard(9)" src="/imges/back of card.jpg">
-        <img id="js-card-c3" class="backCard" onclick="turnTheCard(10)" src="/imges/back of card.jpg">
-        <img id="js-card-c4" class="backCard" onclick="turnTheCard(11)" src="/imges/back of card.jpg">
-        <img id="js-card-d1" class="backCard" onclick="turnTheCard(12)" src="/imges/back of card.jpg">
-        <img id="js-card-d2" class="backCard" onclick="turnTheCard(13)" src="/imges/back of card.jpg">
-        <img id="js-card-d3" class="backCard" onclick="turnTheCard(14)" src="/imges/back of card.jpg">
-        <img id="js-card-d4" class="backCard" onclick="turnTheCard(15)" src="/imges/back of card.jpg">`
+        <img id="js-card-a2" class="backCard" onclick="turnTheCard(1)" src="../imges/back of card.jpg">
+        <img id="js-card-a3" class="backCard" onclick="turnTheCard(2)" src="../imges/back of card.jpg">
+        <img id="js-card-a4" class="backCard" onclick="turnTheCard(3)" src="../imges/back of card.jpg">
+        <img id="js-card-b1" class="backCard" onclick="turnTheCard(4)" src="../imges/back of card.jpg">
+        <img id="js-card-b2" class="backCard" onclick="turnTheCard(5)" src="../imges/back of card.jpg">
+        <img id="js-card-b3" class="backCard" onclick="turnTheCard(6)" src="../imges/back of card.jpg">
+        <img id="js-card-b4" class="backCard" onclick="turnTheCard(7)" src="../imges/back of card.jpg">
+        <img id="js-card-c1" class="backCard" onclick="turnTheCard(8)" src="../imges/back of card.jpg">
+        <img id="js-card-c2" class="backCard" onclick="turnTheCard(9)" src="../imges/back of card.jpg">
+        <img id="js-card-c3" class="backCard" onclick="turnTheCard(10)" src="../imges/back of card.jpg">
+        <img id="js-card-c4" class="backCard" onclick="turnTheCard(11)" src="../imges/back of card.jpg">
+        <img id="js-card-d1" class="backCard" onclick="turnTheCard(12)" src="../imges/back of card.jpg">
+        <img id="js-card-d2" class="backCard" onclick="turnTheCard(13)" src="../imges/back of card.jpg">
+        <img id="js-card-d3" class="backCard" onclick="turnTheCard(14)" src="../imges/back of card.jpg">
+        <img id="js-card-d4" class="backCard" onclick="turnTheCard(15)" src="../imges/back of card.jpg">`
 
        document.querySelector('.js-cards-div').innerHTML = htmlCardsTable;
        HTMLEndGameWin = "";
